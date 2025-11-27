@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Mood Recipe Disco Machine </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="disco-bg">
+
+    <h1 class="title">🍒 Bite by Vibe</h1>
+    <p class="subtitle">where your mood decides your next bite😋</p>
+
+    <div class="machine">
+
+        <!-- LEFT SIDE : MOODS -->
+        <div class="moods-panel">
+            <h2>Pick Your Mood</h2>
+
+            <button class="mood-btn" data-mood="cookie-cravings">🍪 Cookie Cravings</button>
+            <button class="mood-btn" data-mood="boba-brain">🧋 Boba Brain</button>
+            <button class="mood-btn" data-mood="rainy-day-softie">🌧 Rainy Day Softie</button>
+            <button class="mood-btn" data-mood="main-character-energy">✨ Main Character Energy</button>
+            <button class="mood-btn" data-mood="netflix-and-noms">📺 Netflix & Noms</button>
+            <button class="mood-btn" data-mood="emotionally-unavailable">🧊 Emotionally Unavailable</button>
+            <button class="mood-btn" data-mood="spice-me-up">🔥 Spice Me Up</button>
+            <button class="mood-btn" data-mood="midnight-bhook">🌙 Midnight Bhook</button>
+            <button class="mood-btn" data-mood="soft-girl-snacks">🎀 Soft Girl Snacks</button>
+            <button class="mood-btn" data-mood="chef-mode-on">🍳 Chef Mode On</button>
+            <button class="mood-btn" data-mood="sufi-aur-kuch-nahi">🎵 Sufi Aur Kuch Nahi</button>
+        </div>
+
+        <!-- RIGHT SIDE : DISCO MACHINE -->
+        <div class="jukebox">
+
+            <div class="disco-ball-container">
+                <img src="disco-ball.png" class="real-disco-ball" />
+            </div>
+            
+
+            <div class="wheel" id="wheel">
+                <p id="wheel-text">Select a mood & SPIN</p>
+            </div>
+
+            <button id="spin-btn">🎲 SPIN THE WHEEL</button>
+
+            <div class="result">
+                <p><b>Mood:</b> <span id="show-mood">None</span></p>
+                <h2 id="show-recipe">---</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        Made by @codewithme — Backend: Node + Express
+    </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: radial-gradient(circle at top, #300000, #000000);
+    color: white;
+  }
+  
+  /* TITLE */
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    color: whitesmoke;
+    text-shadow: 0 0 5px red;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: -10px;
+    margin-bottom: 30px;
+
+    /* Theme vibes */
+    color: #ffb3c6;   /* soft pink silver tone */
+    letter-spacing: 1.5px;
+    
+
+    /* Glow effect */
+    text-shadow: 
+        0 0 6px #ff073a,
+        0 0 12px #c9184a;
+
+    opacity: 0.9;
+}
+
+  
+  /* MAIN MACHINE */
+  .machine {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+  }
+  
+  /* MOOD PANEL */
+  .moods-panel {
+    width: 35%;
+    background: black;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid silver;
+    box-shadow: 0 0 20px red;
+    max-height: 650px;
+    overflow-y: auto;
+  }
+  
+  .moods-panel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  /* MOOD BUTTON */
+  .mood-btn {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border-radius: 30px;
+    border: 1px solid silver;
+    background: linear-gradient(45deg, #300000, #700000);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .mood-btn:hover {
+    background: linear-gradient(45deg, red, black);
+    box-shadow: 0 0 12px silver;
+    transform: scale(1.05);
+  }
+  
+  .mood-btn.active {
+    border: 2px solid white;
+    box-shadow: 0 0 15px red;
+  }
+  
+  /* JUKEBOX */
+  .jukebox {
+    width: 60%;
+    background: #050505;
+    border-radius: 40px;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid silver;
+    box-shadow: inset 0 0 30px red;
+  }
+  
+  /* DISCO BALL */
+  .disco-ball-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .real-disco-ball {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    animation: discoSpin 8s linear infinite, shimmer 1.5s ease-in-out infinite alternate;
+    filter: drop-shadow(0 0 15px silver);
+  }
+  
+  @keyframes discoSpin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes shimmer {
+    from {
+      filter: brightness(1) drop-shadow(0 0 10px silver);
+    }
+    to {
+      filter: brightness(1.4) drop-shadow(0 0 25px red);
+    }
+  }
+  
+  
+  @keyframes shimmer {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* WHEEL */
+  .wheel {
+    margin: 40px auto;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #111, #550000, black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid silver;
+    box-shadow: 0 0 40px red;
+    transition: transform 3s ease-in-out;
+  }
+  
+  .wheel.spinning {
+    transform: rotate(1440deg);
+  }
+  
+  /* CENTER TEXT */
+  #wheel-text {
+    background: black;
+    padding: 20px;
+    border-radius: 50%;
+    border: 2px solid silver;
+  }
+  
+  /* SPIN BUTTON */
+  #spin-btn {
+    padding: 16px 40px;
+    margin-top: 15px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    border: 2px solid silver;
+    background: linear-gradient(45deg, red, black);
+    color: white;
+    cursor: pointer;
+  }
+  
+  #spin-btn:hover {
+    box-shadow: 0 0 30px red;
+  }
+  
+  /* RESULT PANEL */
+  .result {
+    margin-top: 25px;
+    padding: 20px;
+    background: black;
+    border-radius: 20px;
+    border: 1px solid silver;
+    box-shadow: 0 0 20px red;
+  }
+  
+  #show-recipe {
+    color: #ff4d4d;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    opacity: 0.8;
+    padding-bottom: 20px;
+  }
+
+  
